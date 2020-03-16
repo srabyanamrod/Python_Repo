@@ -1,0 +1,21 @@
+import numpy as np
+
+array = np.array([[1,2], [3,4]])
+array2 = np.array([[-1,-2], [-3,-4]])
+
+#Arraylari dikey bir şekilde birleştirme
+array3 = np.vstack((array,array2))
+print(array3)
+#Output
+#[[ 1  2]
+# [ 3  4]
+# [-1 -2]
+# [-3 -4]]
+
+
+#Arraylari yatay bir şekilde birleştirme
+array4 = np.hstack((array,array2))
+print(array4)
+#Output
+#[[ 1  2 -1 -2]
+# [ 3  4 -3 -4]]
